@@ -5,41 +5,69 @@ class Home extends Component {
   render() {
     return (
       <div>  
-        <div>
-            <nav id="navbar" className="navbar navbar-expand-sm navbar-default fixed-top" style={{backgroundColor: '#111111',fontSize: '11px'}}>
-              <a className="navbar-brand" style={{color: 'white'}}>Company Name</a>
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link active" data-target="#item-1">Home</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" data-target="#item-2">Work</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" data-target="#item-3">About</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" data-target="#item-4">Contact</a>
-                  </li>    
-                </ul>
-              </div>
-            </nav>
-        </div>
-        <div id="item-1" style={{height: '120vh'}}>
-          <div className="container" id="home" style={{textAlign: 'center', marginTop: '-90px'}}>
-            <div className="item2">
-              <h1 className="regular" style={{fontSize: '3.5rem'}}>Making your</h1>
-              <h1 className="regular" style={{fontSize: '3.5rem'}}> Idea Possible</h1>
+        
+          <nav id="navbar" className="navbar navbar-expand-sm navbar-default fixed-top" style={{backgroundColor: '#111111',fontSize: '11px'}}>
+            <a className="navbar-brand" style={{color: 'white'}}>Company Name</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link active" data-target="#item-1">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" data-target="#item-2">Work</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" data-target="#item-3">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" data-target="#item-4">Contact</a>
+                </li>    
+              </ul>
             </div>
-
-            <div className="item4">
-              <button type="button" className="btn btn-outline-success btn-md">START NOW</button>
+          </nav>
+        
+        <div id="item-1">
+          <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img className="d-block w-100 vh-100" src={'https://cdn-images-1.medium.com/max/1600/1*xpqVvIj_QP19qi48NpqIfQ.jpeg'} alt="First slide"></img>
+              <div className="carousel-caption d-none d-md-block">
+                <h1>Image 1 Heading</h1>
+                <h2>Image 1 Details</h2>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100 vh-100" src={'https://cdn-images-1.medium.com/max/1600/1*xpqVvIj_QP19qi48NpqIfQ.jpeg'} alt="Second slide"></img>
+              <div className="carousel-caption d-none d-md-block">
+                <h1>Image 1 Heading</h1>
+                <h2>Image 1 Details</h2>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100 vh-100" src={'https://cdn-images-1.medium.com/max/1600/1*xpqVvIj_QP19qi48NpqIfQ.jpeg'} alt="Third slide"></img>
+              <div className="carousel-caption d-none d-md-block">
+                <h1>Image 1 Heading</h1>
+                <h2>Image 1 Details</h2>
+              </div>
             </div>
           </div>
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+          </a>
+        </div>
         </div>
         <div id="item-2" className="wrap" style={{display:'flex',justifyContent:'space-around',paddingTop: '4rem', paddingBottom: '4rem', backgroundColor:'#f7f9fa'}}>
           <div data-aos="zoom-in-up" className="col-xs-10 col-sm-10 col-md-10 col-lg-10" style={{background:'white', textAlign:'center', padding:'5rem 1.5rem'}}>
@@ -52,7 +80,7 @@ class Home extends Component {
         </div>
         <div id="item-3">
           <div data-aos="zoom-in-up" className="container paddingTopBottom" style={{borderBottom: '1px solid lightgray'}}>
-            <div className="row paddingTopBottom">
+            <div className="row paddingTopBottom ml-0 mr-0">
               <div className="col-md-4 footer-widget" style={{textAlign: 'left'}}>
                 <h4 className="footerWidgetHeader">Get in Touch</h4>
                 <p className="footer-widget-detail">Phone: + 1 888 1554 456 123</p>
@@ -71,7 +99,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="container footer-copyright-text-icon" style={{padding: '2.5rem 0rem'}}>
-            <div className="row">
+            <div className="row ml-0 mr-0">
               <div className="col-md-6 col-sm-12 footer-text" style={{textAlign:'left',color: '#7a7a7a', marginTop:'1rem'}}>
                 © 2018 | Made by Tirth Gajjar and Parag Chauhan
               </div>
@@ -184,4 +212,19 @@ export default Home;
             </div>			
           </div>
         </div>
+*/
+
+/*
+<div id="item-1" style={{height: '120vh'}}>
+  <div className="container" id="home" style={{textAlign: 'center', marginTop: '-90px'}}>
+    <div className="item2">
+      <h1 className="regular" style={{fontSize: '3.5rem'}}>Makiiiing your</h1>
+      <h1 className="regular" style={{fontSize: '3.5rem'}}> Idea Possible</h1>
+    </div>
+
+    <div className="item4">
+      <button type="button" className="btn btn-outline-success btn-md">START NOW</button>
+    </div>
+  </div>
+</div>
 */
