@@ -437,6 +437,9 @@ textarea {
   .footer-text{
     text-align: center !important;
   }
+  .about-us{
+    padding: 5rem 0rem !important;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -473,12 +476,16 @@ textarea {
 	body{
 		line-height: 1.2em;	
   }
+  .about-us{
+    padding: 5rem 0rem !important;
+  }
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1100px) { 
     .card-text{
     	font-size: 0.8em;
     }
+    
 }
 
 @media screen and (max-width: 1205px){
@@ -534,4 +541,16 @@ textarea {
 }
 .carousel-caption{
   top: 50%;
+}
+.no-border-radius{
+  border-radius: 0%;
+}
+.about-us{
+  padding: 5rem 3rem;
+}
+.font-weight-700{
+  font-weight: 700 !important;
+}
+.pg-bar-color{
+  background-color: #f36b21 !important;
 }

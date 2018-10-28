@@ -5,30 +5,28 @@ class Home extends Component {
   render() {
     return (
       <div>  
-        
-          <nav id="navbar" className="navbar navbar-expand-sm navbar-default fixed-top" style={{backgroundColor: '#111111',fontSize: '11px'}}>
-            <a className="navbar-brand" style={{color: 'white'}}>Company Name</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link active" data-target="#item-1">Home</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-target="#item-2">Work</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-target="#item-3">About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-target="#item-4">Contact</a>
-                </li>    
-              </ul>
-            </div>
-          </nav>
-        
+        <nav id="navbar" className="navbar navbar-expand-sm navbar-default fixed-top" style={{backgroundColor: '#111111',fontSize: '11px'}}>
+          <a className="navbar-brand" style={{color: 'white'}}>Company Name</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" data-target="#item-1">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" data-target="#item-2">Work</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" data-target="#item-3">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" data-target="#item-4">Contact</a>
+              </li>    
+            </ul>
+          </div>
+        </nav>
         <div id="item-1">
           <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
           <ol className="carousel-indicators">
@@ -38,21 +36,21 @@ class Home extends Component {
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="d-block w-100 vh-100" src={'https://cdn-images-1.medium.com/max/1600/1*xpqVvIj_QP19qi48NpqIfQ.jpeg'} alt="First slide"></img>
+              <img className="d-block w-100 vh-100" src={'../img/1.jpg'} alt="First slide"></img>
               <div className="carousel-caption d-none d-md-block">
                 <h1>Image 1 Heading</h1>
                 <h2>Image 1 Details</h2>
               </div>
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100 vh-100" src={'https://cdn-images-1.medium.com/max/1600/1*xpqVvIj_QP19qi48NpqIfQ.jpeg'} alt="Second slide"></img>
+              <img className="d-block w-100 vh-100" src={'../img/2.jpg'} alt="Second slide"></img>
               <div className="carousel-caption d-none d-md-block">
                 <h1>Image 1 Heading</h1>
                 <h2>Image 1 Details</h2>
               </div>
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100 vh-100" src={'https://cdn-images-1.medium.com/max/1600/1*xpqVvIj_QP19qi48NpqIfQ.jpeg'} alt="Third slide"></img>
+              <img className="d-block w-100 vh-100" src={'../img/3.jpg'} alt="Third slide"></img>
               <div className="carousel-caption d-none d-md-block">
                 <h1>Image 1 Heading</h1>
                 <h2>Image 1 Details</h2>
@@ -77,8 +75,125 @@ class Home extends Component {
               Canna is a responsive and elegant template with tons of features. Lorem ipsum dolor sit amet, consectetur. Grab this perfect solution. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip awesome. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip awesome.
             </p>
           </div>
+        </div>      
+        <div className="content" style={{display:'flex',backgroundColor:'#484B54'}}>
+          <div className="grid row col-md-12">
+            <div data-aos="zoom-in-up" className="col-md-4">
+              <figure className="effect-sadie">
+                <img height="400" src={'../img/4.jpg'} alt="img02"></img>
+                <figcaption>
+                  <h2>Holy <span>Sadie</span></h2>
+                  <p>Sadie never took her eyes off me. She had a dark soul.</p>
+                  <a href="#">View more</a>
+                </figcaption>			
+              </figure>
+            </div>
+            <div data-aos="zoom-in-up" className="col-md-4">
+              <figure className="effect-sadie">
+                <img height="400" src={'../img/5.jpg'} alt="img14"/>
+                <figcaption>
+                  <h2>Holy <span>Sadie</span></h2>
+                  <p>Sadie never took her eyes off me. She had a dark soul.</p>
+                  <a href="#">View more</a>
+                </figcaption>			
+              </figure>
+            </div>
+            <div data-aos="zoom-in-up" className="col-md-4">
+              <figure className="effect-sadie">
+                <img height="400" src={'../img/6.jpg'} alt="img02"></img>
+                <figcaption>
+                  <h2>Holy <span>Sadie</span></h2>
+                  <p>Sadie never took her eyes off me. She had a dark soul.</p>
+                  <a href="#">View more</a>
+                </figcaption>			
+              </figure>
+            </div>
+          </div>
         </div>
-        <div id="item-3">
+        <div id="item-3" className="about-us" style={{padding:'5rem 3rem'}}>
+          <div className="col-md-12">
+            <div className="row col-md-12 col-lg-12" style={{textAlign: 'center', paddingLeft: '2rem'}}>
+              <span className="card-title subHeading">ABOUT US</span>
+            </div>
+            <div className="row col-md-12 col-lg-12">
+              <div data-aos="zoom-in-up" className="col-md-6 col-lg-6">
+                <h4 className="font-weight-700">We work since 2005.</h4>
+                <p className="footer-widget-detail">
+                  We possess within us two minds. So far I have written only of the conscious mind. I would now like to introduce you to your second mind. Our subconscious mind contains such power and complexity that it literally staggers the imagination. In order to understand how the conscious and subconscious minds work together as a team to create your reality, let me again use an analogy.
+                </p>
+              </div>
+              <div data-aos="zoom-in-up" className="col-md-6 col-lg-6">
+                {/*FIRST */}
+                <div className="col-md-12" style={{padding:'0.3rem 0rem'}}>
+                  <div className="col-md-12" style={{padding:'0.3rem 0rem', fontWeight:'700', fontSize: '11px'}}>
+                    <h7>DESIGN</h7>
+                    <h7 style={{float:'right'}}>100%</h7>
+                  </div>
+                  <div className="progress" style={{height:'7px'}}>
+                    <div className="progress-bar pg-bar-color" role="progressbar" style={{width: '100%'}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                {/*SECOND */}
+                <div className="col-md-12" style={{padding:'0.3rem 0rem'}}>
+                  <div className="col-md-12" style={{padding:'0.3rem 0rem', fontWeight:'700', fontSize: '11px'}}>
+                    <h7>HTML</h7>
+                    <h7 style={{float:'right'}}>80%</h7>
+                  </div>
+                  <div className="progress" style={{height:'7px'}}>
+                    <div className="progress-bar pg-bar-color" role="progressbar" style={{width: '80%'}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                {/*THIRD */}
+                <div className="col-md-12" style={{padding:'0.3rem 0rem'}}>
+                  <div className="col-md-12" style={{padding:'0.3rem 0rem', fontWeight:'700', fontSize: '11px'}}>
+                    <h7>CSS</h7>
+                    <h7 style={{float:'right'}}>100%</h7>
+                  </div>
+                  <div className="progress" style={{height:'7px'}}>
+                    <div className="progress-bar pg-bar-color" role="progressbar" style={{width: '100%'}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                {/*FOURTH */}
+                <div className="col-md-12" style={{padding:'0.3rem 0rem'}}>
+                  <div className="col-md-12" style={{padding:'0.3rem 0rem', fontWeight:'700', fontSize: '11px'}}>
+                    <h7>JQUERY</h7>
+                    <h7 style={{float:'right'}}>75%</h7>
+                  </div>
+                  <div className="progress" style={{height:'7px'}}>
+                    <div className="progress-bar pg-bar-color" role="progressbar" style={{width: '75%'}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="item-4" style={{backgroundColor:'#484B54', padding:'4rem 0rem'}}>
+          <div data-aos="zoom-in-up">
+            <div className="container" style={{textAlign:'center'}}>
+              <span className="card-title subHeading">CONTACT</span>
+            </div>
+            <div className="container" style={{textAlign:'center'}}>
+              <h2 style={{color: 'white', padding: '0rem 0rem 1rem 0rem'}}>GET IN TOUCH</h2>
+            </div>
+            <div className="container" style={{display:'flex'}}>
+              <div style={{flex:'1', padding:'1rem 2rem'}}>
+                <input type="text" className="form-control no-border-radius" placeholder="Name"></input>
+              </div>
+              <div style={{flex:'1', padding:'1rem 2rem'}}>
+                <input type="email" className="form-control no-border-radius" placeholder="Email"></input>
+              </div>
+            </div>
+            <div className="container" style={{display:'flex'}}>
+              <div style={{flex:'1', padding:'1rem 2rem'}}>
+                <textarea className="form-control no-border-radius" rows="3" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div className="container" style={{textAlign:'center', paddingTop: '1rem'}}>
+              <button type="button" className="btn btn-info">Send Message</button>
+            </div>
+          </div>
+        </div>
+        <div>
           <div data-aos="zoom-in-up" className="container paddingTopBottom" style={{borderBottom: '1px solid lightgray'}}>
             <div className="row paddingTopBottom ml-0 mr-0">
               <div className="col-md-4 footer-widget" style={{textAlign: 'left'}}>
@@ -113,6 +228,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        
       </div>
     );
   }
@@ -120,6 +236,9 @@ class Home extends Component {
 
 export default Home;
 
+/*
+  Image On Hover Effect - https://tympanus.net/Development/HoverEffectIdeas/index.html
+*/
 
 /*
       <div id="item-2" style={{'paddingTop': '4%'}}>
